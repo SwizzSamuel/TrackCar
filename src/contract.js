@@ -2,7 +2,7 @@
 import { ethers } from 'ethers';
 import {abi} from './constants'; // ABI file
 
-const contractAddress = '0xA8E08D49ead594054F85D545486BFE55abBa476E'; // Replace with your deployed contract address
+const contractAddress = '0x4a0DFD41a09a1BC4CC0a33FD84F2C653217B0229'; 
 
 export const getContract = async () => {
     if (window.ethereum) {
