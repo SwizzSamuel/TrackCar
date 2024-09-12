@@ -45,6 +45,12 @@ input[type="date"] {
   border-radius: 4px;
 } */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 button {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -76,3 +82,51 @@ button:hover {
     opacity: 1;
   }
 }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  body {
+    background-size: contain;
+    opacity: 0.7;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
+
